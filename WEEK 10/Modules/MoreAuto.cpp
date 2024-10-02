@@ -20,9 +20,12 @@ int main(){
 
     // However, decltype is too rad and accepts cv-qualifiers or references implicity!
 
-    decltype(a) a_dt; // int
-    decltype(b) b_dt; // int&
-    decltype(c) c_dt; // const int
-    decltype(d) d_dt; // const int&
+    decltype(a) a_dt = a; // int
+    decltype(b) b_dt = b; // int&
+    decltype(c) c_dt = c; // const int
+    decltype(d) d_dt = d; // const int&
 
+    decltype(auto) d_hmm = d; // int
+
+    decltype(d_hmm)::lmaoanythingworkshere_waisebhiwillbeanerrorLOL;
 }
