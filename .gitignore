@@ -1,0 +1,22 @@
+# Ignore all .exe files
+*.exe
+
+# Ignore all object files and other compiled binary files
+*.o
+*.obj
+*.dll
+*.lib
+*.exp
+*.pdb
+
+# Ignore any build directories (customize for your project)
+build/
+dist/
+bin/
+Debug/
+Release/
+
+# Ignore Visual Studio project files (if using Visual Studio)
+*.vcxproj*
+*.sln
+*.user
