@@ -4,7 +4,7 @@ using namespace std;
 
 int& modify(int &a)
 {
-        return a = a * 2;
+    return a = a * 2;
 }
 int main()
 {

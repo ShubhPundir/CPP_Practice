@@ -9,7 +9,7 @@ enum Days  {Sunday,
             Friday,
             Saturday};
 
-Days operator+(const Days &a, const Days &b){
+Days operator+(const Days& a, const Days& b){
     unsigned int ea = a, eb = b;
     unsigned int c = (ea + eb)%7;
     return Days(c);
