@@ -2,7 +2,7 @@
     // #define SQUARE (x) (x)*(x)
 
     using namespace std;
-    int SQUARE(int x){
+    int inline SQUARE(int x){
         return x*x;
     }
     int main()
