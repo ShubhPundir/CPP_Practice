@@ -29,7 +29,7 @@ class Employee : private Contact {
             cout << "Name: " << emp_name << endl;
         }
 };
-int main(){
+int main() {
     int id, phone;
     string name, email;
     // cin >> id >> name;
