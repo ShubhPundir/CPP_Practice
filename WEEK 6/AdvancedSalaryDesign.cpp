@@ -6,12 +6,18 @@ using namespace std;
 class Employee{
     protected: string name_;
     vector <Employee*> reports_;
+    static vector<Employee*> staffs; // collection of all employee pointers/references
     public:
         Employee(const string& name) : name_(name) {}
         virtual void ProcessSalary() = 0; // pure virtual function 
         virtual ~Employee() {}
-        static vector<Employee*> staffs; // collection of all employee pointers/references
         void AddStaff(Employee* e) {staffs.push_back(e);}
+        static void Print(){
+            vector<Employee*>::const_iterator it; // iterator over staffs
+            for(it = Employee::staffs.begin(); it < Employee::staffs.end(); ++it){       
+                (*it)->ProcessSalary();
+            }
+        }
 };
 
 class Engineer : public Employee{
@@ -48,11 +54,10 @@ int main()
     Director d("Ranjana");
     SalesExecutive s1("Hari"), s2("Bishnu");
 
-    vector<Employee*>::const_iterator it; // iterator over staffs
     
-    for(it = Employee::staffs.begin(); it < Employee::staffs.end(); ++it){
-        
-        (*it)->ProcessSalary();
-    }
+    
+    Employee::Print();
+
+
     return 0;
 }
