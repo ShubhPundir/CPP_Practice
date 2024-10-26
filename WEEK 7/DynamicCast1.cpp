@@ -26,8 +26,9 @@ class C{public: virtual ~C() { } };
 
 int main(){
     A a; B b; C c;
-
     B* pB = &b; A *pA = &a; C *pC = &c;
+    // defined pointers
+
     cout << "pB = " << pB << " pA = "<< pA << " pC = "<< pC << endl;
     
     pA = dynamic_cast<A*>(pB);
@@ -35,6 +36,7 @@ int main(){
 
     pA = &b; pB = dynamic_cast<B*>(pA) ;
     cout << pA << " casts to " << pB << " : Down-cast: Valid" << endl;
+    // only time the downcast is valid is when the the RHS pointer/reference was already pointing to LHS
 
     pA = &a; pB = dynamic_cast<B*>(pA);
     // not valid as a generalized object is attempting to fit in a specialized object4
