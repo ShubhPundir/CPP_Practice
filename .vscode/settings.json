@@ -9,6 +9,7 @@
         "atomic": "cpp",
         "utility": "cpp",
         "cstdlib": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "xutility": "cpp"
     }
 }
