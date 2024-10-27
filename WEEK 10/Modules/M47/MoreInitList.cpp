@@ -16,6 +16,7 @@ class MyClass{
         showElements();
     }
     MyClass(initializer_list<T> init_list) : elems({init_list}){
+        // can write elems(init_list) as well
         cout << "Initializer List Ctor";
         showElements();
     }

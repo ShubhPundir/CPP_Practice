@@ -14,8 +14,8 @@ class Widget{
 };
 
 int main(){
-    Widget w1(1,2.0,3.0);
+    Widget w1(1,2.0,3.0); // Arguments passed
     // Widget w2{1,2.0,3}; // error
-    Widget w3{1,2,3};
-    Widget w4({4,5,6});
+    Widget w3{1,2,3}; // Initializer List
+    Widget w4({4,5,6}); // Initializer List
 }

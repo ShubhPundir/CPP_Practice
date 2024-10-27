@@ -17,7 +17,7 @@ int main(){
     map<vector<string>, vector<int>> people_years = {
         {{"Maurice", "Vincent"}, {1993, 1997}},
         {{"Shubh", "Akshat", "Amartya"}, {2004, 2004, 2004}},
-        {{"Shubh", "Shivesh", "Toshan"}, {2004,2004,2003}}
+        {{"Shubh", "Shivesh", "Toshan"}, {2004, 2004,2003}}
     };
 
     people_years.insert({{"Johnny","B","Goode"},{1956}});
@@ -25,11 +25,11 @@ int main(){
     for (const auto& entry : people_years) {
         cout << "People: ";
         for (const auto& person : entry.first) {
-            cout << person << " ";
+            cout << person << ", ";
         }
         cout << "--> Years: ";
         for (const auto& year : entry.second) {
-            cout << year << " ";
+            cout << year << ", ";
         }
         cout << endl;
     }

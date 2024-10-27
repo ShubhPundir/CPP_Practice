@@ -18,7 +18,7 @@ int main(){
     auto& b_ = a; // int&
     const auto c_ = a; // const int
 
-    // However, decltype is too rad and accepts cv-qualifiers or references implicity!
+    // However, decltype is too RAD and accepts cv-qualifiers or references implicity!
 
     decltype(a) a_dt = a; // int
     decltype(b) b_dt = b; // int&

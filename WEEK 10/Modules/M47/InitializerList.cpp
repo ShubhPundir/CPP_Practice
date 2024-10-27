@@ -25,21 +25,25 @@ int main(){
     vector<double> v1(7); // v1 has 7 elements
     // cout << v1.size() << endl;
     v1 = {1, 2.21, 3.14, 5, 4.1, 7, 3.0, 8};
-    // cout << v1.size() << endl;
+    // cout << v1.size() << endl; // 8
 
     vector<double> v2{7}; // v2 has 1 element of value 7.0
     // cout <<v2.size();
      
     vector<int> wow = {
-        vector<int>{1,2,3}
+        vector<int>{1,2,3},
+        // 10
     }; // never do this again
-    // is that you're trying to initialize a vector<int> with another vector<int>, but this is not allowed
+    // You're trying to initialize a vector<int> with another vector<int> and an integer,
+    // but this is not allowed
 
     vector<vector<int>> wow2 = {
         vector<int>(10),  // vector of size 10 initialized to 0
         vector<int>{10},  // vector containing a single element 10
         vector<int>{10, 20, 30}  // another vector with 3 elements
     };
+
+    cout << endl;
 
     // Nested loop to print the elements of wow
     for (const auto& inner_vec : wow2) {
@@ -48,6 +52,6 @@ int main(){
         }
         cout << endl;  // New line after each inner vector
     }
-
+    cout << endl;
     f({1,2,3,4});
 }

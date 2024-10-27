@@ -4,7 +4,8 @@ using namespace std;
 
 template<class T, class U>
 vector<decltype(T() * U())> multiply(const vector<T>& vt, const vector<U>& vu){
-// does not work for some reason HMMMMMMM?
+    // T() and U() are default Constructors
+    // 
     typedef decltype(vt[0]*vu[0]) Tmp; // typedef double Tmp
     vector<Tmp> result;
 
@@ -17,7 +18,6 @@ vector<decltype(T() * U())> multiply(const vector<T>& vt, const vector<U>& vu){
 
 
 int main(){
-
     vector<int> vi = {1,2,3,4,5};
     vector<double> vd = {1.0, 2.2, 3.0, 4.0, 5.0};
 
@@ -28,6 +28,4 @@ int main(){
         else
             cout << "Fukc" << endl; 
     }
-
-
 }
