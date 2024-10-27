@@ -16,7 +16,10 @@ int main(){
     cout <<"START SEEING FROM HERE TT" <<endl;
 
     // B==>A
-    a = b;
+    /* Here A, the final destination the variables b and i turn to, go through a constructor
+    and get initialized according to the definition created by the user, this would not
+    have been possible otherwise had the programmer not mention these*/
+    a = b; 
     a = static_cast<A>(b);
     a = (A)b;
 

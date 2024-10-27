@@ -20,6 +20,12 @@ int main(){
     cout <<"START SEEING FROM HERE TT" <<endl;
 
     // B==>A
+    /* Here B class object b's operator is added of the name 'operator A()'
+
+    Either
+    1. The source must have an operator of destination
+    2. The destination may have a constructor with the parameter of source type
+    */
     a = b;
     a = static_cast<A>(b);
     a = (A)b;
