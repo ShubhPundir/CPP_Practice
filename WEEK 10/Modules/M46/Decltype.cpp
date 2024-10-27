@@ -4,7 +4,7 @@ using namespace std;
 
 template<class T, class U>
 vector<decltype(T() * U())> multiply(const vector<T>& vt, const vector<U>& vu){
-
+// does not work for some reason HMMMMMMM?
     typedef decltype(vt[0]*vu[0]) Tmp; // typedef double Tmp
     vector<Tmp> result;
 
