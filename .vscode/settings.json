@@ -11,6 +11,7 @@
         "cstdlib": "cpp",
         "iostream": "cpp",
         "xutility": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "type_traits": "cpp"
     }
 }
