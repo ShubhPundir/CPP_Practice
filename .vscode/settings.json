@@ -12,6 +12,7 @@
         "iostream": "cpp",
         "xutility": "cpp",
         "functional": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "thread": "cpp"
     }
 }
