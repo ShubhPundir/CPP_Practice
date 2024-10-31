@@ -40,4 +40,10 @@ int main()
     cout << "Hello2 ";
     cout << "R3-done " << endl;
     return 0;
+    /*
+        ctor R1-done 
+        c-ctor R2-done 
+        rPtr-done 
+        ctor Hello1 c-ctor c-assign Hello2 R3-done 
+    */
 }
