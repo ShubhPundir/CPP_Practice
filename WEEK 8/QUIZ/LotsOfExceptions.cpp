@@ -32,7 +32,7 @@ int main(){
     }
     catch(DBErrors::PrimaryKeyException&) {cout << "DBErrors::PrimaryKeyException&";}
     catch(DBErrors::ForeignKeyException&) {cout << "DBErrors::ForeignKeyException&";}
-    // catch(DBErrors::SQLException&) {cout << "DBErrors::SQLExceptionWEHWD";}
-    catch(DBErrors::SQLException) {cout << "DBErrors::HEHEHE";}
+    catch(DBErrors::SQLException&) {cout << "DBErrors::SQLExceptionWEHWD";}
+    // catch(DBErrors::SQLException) {cout << "DBErrors::HEHEHE";}
     return 0;
 }

@@ -15,6 +15,8 @@ class NPrint{
 int main(){
     int n = 3;
     NPrint<char, n> np('C'); //LINE-2
+    // A non constant expression cannot be passed as a template parameter as they
+    // are calculated at compile time
     np.print();
     return 0;
 }
