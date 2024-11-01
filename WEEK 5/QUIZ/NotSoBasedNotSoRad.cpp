@@ -5,9 +5,9 @@ class Base{
     public:
         Base() {}
         ~Base() {}
-    private: 
         Base(const Base& obj){}
-        Base& operator=(const Base&);
+        Base& operator=(const Base&) {return *this;}
+    // private: 
 };
 
 class Derived:public Base {
