@@ -17,7 +17,9 @@ T find_if(T first, T last, P pred) {
 void show(list<int> li, int d){
     divide divi(d);
     list<int>::iterator it = find_if(li.begin(), li.end(), divi);
-
+    // cout << *it << " ";  
+    // list<int>::iterator it = li.begin();
+    cout << "GladWeCouldGetThatOuttaOurWay ";
     while(it!=li.end()){
         cout << *it << " ";
         it = find_if(++it, li.end(), divi);
@@ -25,8 +27,8 @@ void show(list<int> li, int d){
 }
 
 int main(){
-    list<int> li {7, 8, 1, 4, 2, 5, 6, 3};
+    list<int> li {7, 8, 1, 4, 2, 5, 16, 3};
     int d;
-    show(li,4);
+    show(li, 4);
     return 0;
 }
