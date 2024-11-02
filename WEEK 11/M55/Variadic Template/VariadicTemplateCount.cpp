@@ -4,7 +4,8 @@ using namespace std;
 template <typename ...Types>
 struct Count; // declaration only
 
-template<> struct Count<>{
+template<> struct
+Count<>{
     const static int value = 0;
 };
 

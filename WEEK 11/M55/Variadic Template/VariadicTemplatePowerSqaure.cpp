@@ -12,7 +12,7 @@ double power_sum(T t){
 template <typename T, typename ...Rest>
 double power_sum(T t, Rest ...rest){
     cout << __PRETTY_FUNCTION__ << endl;
-    return t + power_sum(square(rest...));
+    return t + power_sum(square(rest)...);
 }
 
 int main(){

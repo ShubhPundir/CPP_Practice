@@ -4,7 +4,7 @@ void printAll() {}  // Base case: Do nothing
 
 template <typename T, typename... Args>
 void printAll(T first, Args... rest) {
-    std::cout << first << " ";
+    std::cout << first << ", ";
     printAll(rest...);  // Recursive call with the remaining arguments
 }
 
