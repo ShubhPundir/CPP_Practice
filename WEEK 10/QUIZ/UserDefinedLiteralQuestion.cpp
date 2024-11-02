@@ -9,6 +9,14 @@ long double operator "" _CM(long double x){
     return x;
 }
 
+unsigned long long operator "" _M(unsigned long long x){
+    return x*100;
+}
+
+unsigned long long operator "" _CM(unsigned long long x){
+    return x;
+}
+
 class Distance{
     public:
         Distance(int d1, int d2) : d1_(d1), d2_(d2) {}
