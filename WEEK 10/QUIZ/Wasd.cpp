@@ -19,7 +19,7 @@ int main(){
     char s[15] = "Modern C++"; 
     function(show, s);
     // function(show, 0); // error 
-    // function(show, s[4]); // error
+    // function(show, s[4]); // error as it is a char not a char*
     function(show, nullptr);
     return 0;
 }
