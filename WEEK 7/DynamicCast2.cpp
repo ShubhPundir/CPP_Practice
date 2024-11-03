@@ -15,7 +15,8 @@ int main(){
         A &ra3 = b;
         B &rb4 = dynamic_cast<B&>(ra3);
         cout << "Down-cast: Valid" << endl;
-        // only time the downcast is valid is when the the RHS pointer/reference was already pointing to LHS
+        // only time the downcast is valid is 
+        // when the RHS pointer/reference was already pointing to LHS
         try{
             A &ra5 = a;
             B &rb6 = dynamic_cast<B&>(ra5);
